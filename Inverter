@@ -1,0 +1,94 @@
+# 12V DC to 220V AC Inverter Using SG3525A
+
+## Project Overview
+
+This project focuses on designing and assembling a DC-to-AC inverter that converts a 12V DC input into an AC output using an SG3525A PWM controller, IRF520 MOSFETs, and a 12-0-12V transformer.
+
+The project demonstrates the practical application of power electronics, PWM generation, MOSFET switching, transformer operation, and DC-to-AC power conversion.
+
+## Objectives
+
+- Convert a 12V DC input into an AC output.
+- Generate switching pulses using the SG3525A PWM controller.
+- Implement a push-pull switching configuration using IRF520 MOSFETs.
+- Understand transformer-based voltage conversion.
+- Observe output-voltage variation under different load conditions.
+
+## Hardware Components
+
+- 12V DC power supply
+- SG3525A PWM controller
+- Two IRF520 MOSFETs
+- 12-0-12V transformer (1A)
+- Supporting electronic components
+- Connecting wires and circuit assembly components
+
+## Software and Tools
+
+- Proteus, if used for circuit simulation
+- Circuit design and testing tools actually used during development
+
+## Working Principle
+
+The SG3525A generates PWM switching signals to control the MOSFETs in a push-pull configuration. The MOSFETs switch the DC input through the transformer primary winding, producing an AC output at the secondary winding.
+
+The transformer provides voltage conversion, while the output waveform depends on the switching arrangement and circuit design.
+
+## Circuit Configuration
+
+The main stages of the inverter are:
+
+1. **PWM generation:** The SG3525A generates switching pulses.
+2. **MOSFET switching:** Two IRF520 MOSFETs operate in a push-pull configuration.
+3. **Transformer stage:** A 12-0-12V transformer converts the switched input into a higher-voltage AC output.
+4. **Output testing:** The output voltage is observed under no-load and light-load conditions.
+
+## Testing and Observations
+
+During testing, the following output voltages were observed:
+
+| Test Condition | Observed Output Voltage |
+|---|---:|
+| No load | Approximately 220V |
+| With a 5W LED load | Approximately 142V |
+
+The output voltage decreased under load, indicating voltage regulation and load-handling limitations in the prototype.
+
+These observations are specific to the tested setup and may vary with the input supply, transformer, switching circuit, and load.
+
+## Key Skills Demonstrated
+
+- Power Electronics
+- DC-to-AC Power Conversion
+- SG3525A PWM Controller
+- PWM Generation
+- IRF520 MOSFET Switching
+- Push-Pull Converter Configuration
+- Transformer Operation
+- Electronic Circuit Design
+- Electrical Testing and Measurement
+
+## Applications
+
+- Understanding inverter operating principles
+- Basic backup-power system studies
+- DC-to-AC conversion experiments
+- Power electronics laboratory projects
+
+## Learning Outcomes
+
+This project provided practical exposure to PWM-based switching, MOSFET operation, transformer-based conversion, and the effect of load conditions on inverter output voltage.
+
+## Conclusion
+
+The project demonstrates the conversion of a 12V DC input into an AC output using an SG3525A controller, IRF520 MOSFETs, and a transformer. Testing highlighted the importance of output-voltage regulation and load performance in inverter design.
+
+---
+
+**Project Domain:** Electrical Engineering / Power Electronics
+
+**Controller:** SG3525A
+
+**Switching Devices:** IRF520 MOSFETs
+
+**Transformer:** 12-0-12V, 1A
